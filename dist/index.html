@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Chakra+Petch:wght@500&family=Kameron&family=Libre+Baskerville&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Clipboard website</title>
+  </head>
+  <body class="bg-white dark:bg-slate-900">
+    <!-- Toggle button -->
+    <div class="flex mt-6 mr-3">
+      <div
+        class="relative inline-block w-10 ml-auto align-middle select-none duration-200 ease-in"
+      >
+        <input
+          type="checkbox"
+          name="toggle"
+          id="toggle"
+          class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+        />
+        <label
+          for="toggle"
+          class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"
+        ></label>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="section-container mb-40 pt-16">
+        <img src="images/logo.svg" alt="" class="mx-auto my-16" />
+
+        <h3 class="text-darkGrayishBlue dark:text-white">
+          A history of everything you copy
+        </h3>
+
+        <p class="section-content mb-10 text-2xl text-grayishBlue">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+
+        <!-- Button Container -->
+        <div class="button-container">
+          <a
+            href=""
+            class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+            >Download for iOS</a
+          >
+          <a
+            href=""
+            class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+            >Download for Mac</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Snippets Section -->
+    <section id="snippets">
+      <div class="section-container my-20">
+        <h3 class="text-darkGrayishBlue dark:text-white">
+          Keep track of your snippets
+        </h3>
+        <p class="section-content mb-24 text-grayishBlue">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Out Max and
+          iOS apps will help you organize everything.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features">
+      <div class="section-container my-20">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="./images/image-computer.png"
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16"
+          >
+            <!-- Item 1 -->
+            <div>
+              <h5 class="text-darkGrayishBlue dark:text-white">Quick Search</h5>
+              <p class="max-w-md text-grayishBlue">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+
+            <!-- Items 2 -->
+            <div>
+              <h5 class="text-darkGrayishBlue dark:text-white">iCloud Sync</h5>
+              <p class="max-w-md text-grayishBlue">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div>
+              <h5 class="text-darkGrayishBlue dark:text-white">
+                Completely History
+              </h5>
+              <p class="max-w-md text-grayishBlue">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access Anywhere Section -->
+    <section id="access">
+      <div class="section-container my-20">
+        <h3 class="dark:text-white">Access Clipboard Anywhere</h3>
+        <p class="section-content mb-24 text-grayishBlue">
+          Whether you're on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+
+        <img src="images/image-devices.png" alt="" class="w-auto" />
+      </div>
+    </section>
+
+    <!-- Supercharge Section -->
+    <section id="supercharge">
+      <div class="section-container my-20">
+        <h3 class="dark:text-white">Supercharge your workflow</h3>
+        <p class="section-content mb-16 text-grayishBlue">
+          We've got the tools to boost your productivity.
+        </p>
+
+        <!-- Items Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-blacklist.svg" alt="" class="mb-6" />
+            <h5 class="text-darkGrayishBlue dark:text-white">
+              Create Blacklists
+            </h5>
+            <p class="max-w-md text-xl text-grayishBlue">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-text" alt="" class="mb-6" />
+            <h5 class="text-darkGrayishBlue dark:text-white">
+              Plain Text Snippets
+            </h5>
+            <p class="max-w-md text-xl text-grayishBlue">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-preview.svg" alt="" class="mb-6" />
+            <h5 class="text-darkGrayishBlue dark:text-white">Sneak Preview</h5>
+            <p class="max-w-md text-xl text-grayishBlue">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+      <div
+        class="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0"
+      >
+        <img src="images/logo-google.png" alt="" />
+        <img src="images/logo-ibm.png" alt="" />
+        <img src="images/logo-microsoft.png" alt="" />
+        <img src="images/logo-hp.png" alt="" />
+        <img src="images/logo-vector-graphics.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section id="bottom">
+      <div class="section-container my-20">
+        <h3 class="dark:text-white">Clipboard for iOS and MacOS</h3>
+        <p class="section-content text-grayishBlue mb-10">
+          Available for free on the App Store. Download for Max or iOS, sync
+          with iCloud and you're ready to start adding to your clipboard.
+        </p>
+
+        <!-- Button Container -->
+        <div class="button-container">
+          <div class="button-container">
+            <a
+              href=""
+              class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80"
+              >Download for iOS</a
+            >
+            <a
+              href=""
+              class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80"
+              >Download for Mac</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Border -->
+    <div class="mt-12 border-b border-b-gray-300 dark:border-b-slate-900"></div>
+
+    <footer class="bg-gray-50 dark:bg-slate-900">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!-- Image -->
+          <img src="images/logo.svg" alt="" class="scale-50" />
+
+          <!-- Container for Menus & Social -->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
+          >
+            <!-- Menus -->
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+            >
+              <!-- Menu 1 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div><a href="#" class="hover:text-strongCyan">FAQs</a></div>
+                <div><a href="#" class="hover:text-strongCyan">Contact</a></div>
+              </div>
+
+              <!-- Menu 2 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Privacy Policy</a>
+                </div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Press Kit</a>
+                </div>
+              </div>
+
+              <!-- Menu 3 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Install Guide</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-between w-32 py-1">
+              <a href="https://ja-jp.facebook.com/"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="https://twitter.com/"
+                ><img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img
+                  src="images/icon-instagram.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+            </div>
+
+            <div id="lang" class="flex -justify-center hover:text-strongCyan">
+              <a href="#">
+                <h5 class="text-sm md:ml-5">EN</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bundle.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

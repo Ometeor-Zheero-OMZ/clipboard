@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold md:text-5xl;
+  }
+
+  h5 {
+    @apply mb-2 text-2xl font-bold;
+  }
+}
+
+.toggle-container {
+  @apply relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+.section-content {
+  @apply max-w-3xl mx-auto text-xl leading-9 text-center;
+}
+
+.button-container {
+  @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+}
+
+body {
+  background-image: url("../dist/images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url("../dist/images/bg-header-desktop.png");
+  }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
+}
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #68d391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68d391;
+}
